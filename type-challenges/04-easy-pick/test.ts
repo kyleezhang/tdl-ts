@@ -1,4 +1,5 @@
 import type { Equal, Expect } from '@type-challenges/utils'
+import { MyPick } from './index'
 
 type cases = [
   Expect<Equal<Expected1, MyPick<Todo, 'title'>>>,
