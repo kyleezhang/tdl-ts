@@ -1,0 +1,1 @@
+export type MyParameters<T extends (...parameters: any[]) => unknown> = T extends (...parameters: infer P) => unknown ? P : []

@@ -1,0 +1,1 @@
+export type Push<T extends unknown[], U extends unknown> = [...T, U]
