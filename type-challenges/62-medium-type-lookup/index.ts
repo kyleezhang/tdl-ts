@@ -1,0 +1,1 @@
+export type LookUp<T extends { type: string }, K extends T['type']> = T extends { type: K } ? T : never
