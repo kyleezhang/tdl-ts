@@ -1,0 +1,1 @@
+export type MyCapitalize<T extends string> = T extends `${infer F}${infer Rest}` ? `${Uppercase<F>}${Rest}` : T
