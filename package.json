@@ -1,5 +1,23 @@
 {
+	"name": "tdl-ts",
+	"version": "1.0.0",
+	"description": "type-challeges做题笔记与一些TS技巧小尝试",
+	"scripts": {
+	  "test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+	  "type": "git",
+	  "url": "git+https://github.com/kyleezhang/tdl-ts.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+	  "url": "https://github.com/kyleezhang/tdl-ts/issues"
+	},
 	"devDependencies": {
-		"@type-challenges/utils": "^0.1.1"
+		"@type-challenges/utils": "^0.1.1",
+		"ts-toolbelt": "^9.6.0"
 	}
-}
+  }
+  
