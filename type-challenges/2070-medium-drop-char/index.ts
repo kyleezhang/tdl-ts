@@ -1,0 +1,1 @@
+export type DropChar<S extends string, L extends string> = S extends `${infer F}${infer Rest}` ? F extends L ? DropChar<Rest, L> : `${F}${DropChar<Rest, L>}` : S 
