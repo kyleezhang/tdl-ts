@@ -1,0 +1,1 @@
+export type EndsWith<TString extends string, TEnd extends string> = TString extends `${string}${TEnd}` ? true : false
