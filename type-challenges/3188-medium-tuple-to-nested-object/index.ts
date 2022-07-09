@@ -1,0 +1,1 @@
+export type TupleToNestedObject<T extends any[], U> = T extends [infer First extends PropertyKey, ...infer Rest] ? {[K in First]: TupleToNestedObject<Rest, U>} : U
