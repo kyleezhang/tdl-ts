@@ -1,0 +1,1 @@
+export type Reverse<T extends unknown[], R extends unknown[] = []> = T extends [...infer Rest, infer Last] ? Reverse<Rest, [...R, Last]> : R
