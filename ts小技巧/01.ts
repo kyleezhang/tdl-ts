@@ -1,3 +1,4 @@
+// 将对象中的属性转化为单个属性的并集
 const fruitCounts = {
     apple: 1,
     pear: 4,
