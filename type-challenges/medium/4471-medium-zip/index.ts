@@ -1,0 +1,1 @@
+export type Zip<M extends unknown[], N extends unknown[]> = M extends [infer Fm, ...infer Rm] ? N extends [infer Fn, ...infer Rn] ? [[Fm, Fn], ...Zip<Rm, Rn>] : [] : []
