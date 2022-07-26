@@ -1,0 +1,1 @@
+export type Without<T extends unknown[], U> = T extends [infer F, ...infer R] ? F extends T[number] & (U extends any[] ? U[number] : U) ? Without<R, U> : [F, ...Without<R, U>] : T
