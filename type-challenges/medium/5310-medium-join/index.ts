@@ -1,0 +1,1 @@
+export type Join<T extends string[], U extends string | number> = T extends [infer F, ...infer R extends string[]] ? R['length'] extends 0 ? F : `${F & string}${U}${Join<R, U>}` : ''
