@@ -1,4 +1,4 @@
-type MapTypes<
+export type MapTypes<
   T extends Record<keyof any, unknown>,
   R extends {
     mapFrom: unknown;
@@ -11,5 +11,3 @@ type MapTypes<
       [K in keyof U]: [U[K]] extends [never] ? T[K] : U[K];
     }
   : never;
-
-type Test = MapTypes<{ name: string }, { mapFrom: boolean; mapTo: never }>
