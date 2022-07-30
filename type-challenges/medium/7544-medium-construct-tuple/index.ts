@@ -1,0 +1,1 @@
+export type ConstructTuple<N extends number, T extends unknown[] = []> = T['length'] extends N ? T : ConstructTuple<N, [...T, unknown]>
